@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <header class="tm-header">
+        <label class = "header-label" for=""> <a href="CSS.html">CSS</a></label>
+        <label class = "header-label" for=""><a href="index.html">HTML</a></label>
+        <label class = "header-label" for="">JavaScript</label>
+        <label class = "header-label" for=""><a href="Algoritm.html">Алгоритмы</a></label>
+        <label class = "header-label" for=""><a href="Git-and-plagin.html">Git и плагины на VSCode</a></label>
+    </header>
+    <main class="main_background">
+        <div class="under-header">
+        </div> 
+        <div class="constructor">
+            <h1> Справочник JavaScript от Антона</h1>
+            <h2> Основы JavaScript</h2>
+            <p> <span class="color-font">"use strict"</span>; необходимо писать в начале кода для корректной его работы(Если объявить переменную без let
+                или
+                const(var), то выдаст ошибку)</p>
+            <h2>Типы информации</h2>
+            <p>console.log(typeof (переменная)); - выводит в консоль тип переменной.</p>
+            <div class="block">
+                <h3>Простые типы</h3> 
+                <p>Числа 1,2,3 <br>Строки "String","name"<br> Логические тип(boolean)<br> true/false<br> null<br> underfined<br> Symbol<br> Bigint</p>
+            </div>
+            <div class="block">
+                <h3>Объекты</h3> 
+                <p>Массивы []<br> Функции funtion<br>Объект Даты<br>Регулярные выражения<br>Ошибки</p>
+                
+            </div>
+            <h2>Вывод на экран</h2>
+            <p class="code"> <span class="color-font">alert</span> ('Hello');</p>
+            <p class="code"> const result = <span class="color-font">confirm</span> ("Are you ready?"); - сохраняет результат либо true либо false</p> 
+            <p class="code"> const answer = <span class="color-font">prompt</span> ("Вам есть 18?", "(подсказка для пользователя)"); - сохраняет результат пользователя в переменную answer</p> 
+            <p><span style="font-weight: bold;">Важно!</span> Вся информация от пользователей приходит в виде string(сторок).</p> 
+            <h2>Интерполяция</h2>
+            <p>Интерполяция - это значит, что внутри строки можно вставить значеия переменной с помощью знака `.</p>
+            <div class="code">
+                <span class="italic">const category = 'toys';<br>
+                console.log(`http://someurl.com/ <span class="color-font">${category}</span>/5`);</span>  
+            </div>
+            <h2>Сокращения,инкременты и декременты в JS</h2>
+            <p>Сокращения для обозначения нескольких переменных:</p>
+            <div class="code"> <span> let a = 10, <br>
+                b = 10,<br>
+                c = 10;</span>
+            </div>
+        </div><!-- Конец всего блока -->
+    </main>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
