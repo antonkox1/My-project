@@ -40,6 +40,31 @@
         <p class="low-margin">h1::before{content: "Привет"} - добавляет текст сзади</p> 
         <p class="low-margin">h1::after{content: "Пока"} - добавляет текст спереди</p> 
         <p class="low-margin">.list(класс) li:ntn-clild(2) - изменяет определенное значение (можно использовать even и odd)</p> 
+        <h2>Блочная модель</h2>
+        <p>display:block - блочный элемент, занимет всю ширину страницы</p>
+        <p>display:inline - строчный элемент, занимет необходимоую ширину, нет отступов снизу и сверху</p>
+        <p>display:inline-block - блочно-строчный элемент, встраевается как блок, но занимает определенное место</p>
+        <p>box-sizing: border-box (ужимает блок до опреденной высоты и ширины)</p>
+        <h2>Позиционирование и размеры</h2>
+        <p>position:relative - перещается относительно блока в котором находится</p>
+        <p>position:absolute - позицианируется относительно блока</p>
+        <p>position:fixed - позицианируется относительно окна браузера</p>
+        <p>position:sticky - при скороле смешается по блоку</p>
+        <h2>Единицы, переполнение и уровни элементов</h2>
+        <p>2em - увеличение шрифта в раза относительно родителя</p>
+        <p>2rem - увеличение шрифта в раза относительно базового шрифта в теге html</p>
+        <p>width: 100vw - занять 100 процентов ширины</p>
+        <p>height: calc(90vw - 100px) - занять 90 процентов высоты минус 100 пиксейлей</p>
+        <p>z-index: 1 - позицианирование на странице, чем выше число, тем выше позиционирование</p>
+        <p>overflow: auto - устанавливает скрол, если он нужен</p>
+        <p>overflow: scroll - устанавливает скрол всегда</p>
+        <p>overflow: hidden - обрезает контент</p>
+        <h2>Границы и тени (Borders & Shadows)</h2>
+        <p style="border: red 5px solid;">border: red 5px solid  - Внутренние границы</p>
+        <p style="outline: blue 5px solid">outline: blue 5px solid; - Внешняя граница</p>
+        <p style="text-shadow: 1px 2px 5px orange">text-shadow: 1px 2px 5px orange; - первое значение смещение в право, второе смещение вних, третие размытие</p>
+        <p style="box-shadow: -3px -2px 11px green">box-shadow: -3px -2px 11px green; - К блоку</p>
+        <p style="box-shadow: -3px -2px 11px green, 1px 2px 5px orange, inset 1px 2px 5px black">box-shadow: -3px -2px 11px green, 1px 2px 5px orange, 1px 2px 5px black; - inset тень внутри, можно применять несколько теней</p>
         <h2>Анимации</h2>
         <p></p>
     </div>
