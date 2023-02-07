@@ -2,21 +2,19 @@
 
 document.querySelector('.butt').onclick = myClick;
 
-const myList = [1,2,3,4,5,6,7,8,9,10,11,12]
 
 
 
-
-function binary_search (listForsearch, number) { // Бинарный поиск
+function binary_search (listForsearch, numberArr) { // Бинарный поиск
     let low = 0;
     let high = listForsearch.length - 1;
         while (low <= high) {
         let mid = Math.floor((low + high) / 2) ;
         let guess = listForsearch[mid];
-        if (guess === number){
+        if (guess === numberArr){
             return mid;
         }
-        if (guess < number){
+        if (guess < numberArr){
             low = mid + 1;
         }
         else    {
@@ -27,15 +25,19 @@ function binary_search (listForsearch, number) { // Бинарный поиск
         return null;
     }
 
-function myClick(){
-    let number = prompt('Введите число');
+function myClick() {
+    const myList = [1,2,3,4,5,6,7,8,9,10,11,12];
+    let number = prompt('Введите число от 1 до 12');
     number = Number(number);
-    if (binary_search(myList, number) === null){
+    let resultBinarySearch = binary_search(myList, number)
+    if (resultBinarySearch === null){
         alert(`Вводи, что говорят!`); 
     } else {
-        alert(`Номер в массиве ${binary_search(myList, number)}`); 
+        alert(`Номер в массиве ${resultBinarySearch}`); 
     }
+    console.log(myList);
     document.querySelector('.text_out').innerHTML = sortDescending(myList); //Вывод массива на экран
+   
 }
 
 

@@ -9,11 +9,11 @@ body {
 }
 
 .main_background {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 .constructor {
-    background-color: white;
+  background-color: white;
     color: #444;
     position: relative;
     max-width: 860px;
@@ -92,8 +92,16 @@ h2{
     padding: 10px;
     cursor: pointer; /*подсвечивает кнопку при наведении */  
     font-size: 22px;
+    
 }
 
+
+/* при уменьшении страницы */
+@media (max-width: 1150px) { 
+  #git_short {
+    display: none ;
+  }
+}
 
 label a { /*Комбинаторы - selector1 selector2 {стили } */
     text-decoration: none ;
@@ -102,11 +110,6 @@ label a { /*Комбинаторы - selector1 selector2 {стили } */
        
 }
 
-
-label.header-label.active {
-    color: rgb(255, 0, 0) ;
-    
-}
 /* 
 label.header-label.active {
     color: #ff6d91;
@@ -127,14 +130,16 @@ label.header-label.active {
 .struct_font_longtext{
     font-size: 20px;
     line-height: 1.5;
+
+
 }
 
 .butt{
     font-size: 20px;
     height: 50px;
     width: 200px;
-    background: rgba(0,0,0,.5);
-    box-shadow: 0px 0px 6px black;
+    background-color: #424242;
+    box-shadow: 0px 0px 8px #424242;
     color: #03e9f4;
     display: block;
     margin: auto;
