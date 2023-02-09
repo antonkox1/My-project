@@ -82,10 +82,32 @@
         <p>background-attachment: fixed - фиксирует объект</p>
         <p>background: linear-gradient (90deg, black 10%, white 50%, blue 80%) - добавляет градиет в 90 градусов</p>
         <p>background: radial-gradient (90deg, black 10%, white 50%, blue 80%) - добавляет градиет в по кругу</p>
-        <h2>Полезности</h2>
-        <p>visibility: hidden; - Скрыть текст (оставляет отступы)</p>
+        <h2>Фильтры</h2>
+        <p>filter:blur(2px) - Размытие</p>
+        <p>filter:drop-shadow (5px 6px 4px rgb (0,0,0, 0.5)) - создает тень (также и для псевдоэлементов)</p>
+        <p>filter:grayscale(100%) - задает черно-белым</p>
+        <p>filter:brighness(150%) - задает яркость</p>
+        <p>filter: opacity(50%) - задает прозрачность</p>
+        <h2>Плавные переходы</h2>
+        <p>transition-duration: 0.5s, 2s(500ms) - время анимации, можно задавать для нескольких анимаций</p>
+        <p>transition-property: background-color, transform (all) - к каким свойствам применить анимацию</p>
+        <p>transition-delay: 0, 500ms - время задержки анимации</p>
+        <p>transition-timing-function: linear - время задержки анимации</p>
+        <p>transition: all 1s ease .5s; - краткая запись</p>
         <h2>Анимации</h2>
+        <p>animation-name: myAnimation - вызвать анимацию</p>
+        <p>animation-iteration-count: infinite(3) - задает количество анимаций</p>
+        <p>animation: name duration timing-function delay iteration-count direction fill-mode; - краткая запись</p>
+        <p>animation-play-state: paused(running) - останавливает или возобновляет анимацию</p>
+        <p>animation-fill-mode: forwards; - оставляет анимацию без возврата</p>
+        <p>@keyframe myAnimation {<br> from {background-color:blue}<br>50% {background-color:yellow}<br>to {background-color:black}<br>}</p>
+        <h2>Медиазапросы</h2>
+        <div></div>
         <p></p>
+        <h2>Полезности</h2>
+        <p>visibility: hidden;  - Скрыть текст (оставляет отступы)</p>
+        <p>column-count: 3 - разделяет текст на 3 колонки</p> 
+        <p>column-rule: 1px solid black - добавляет линию разделения колонок</p> 
     </div>
     </main>
 </body>

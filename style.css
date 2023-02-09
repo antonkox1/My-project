@@ -13,7 +13,7 @@ body {
 }
 
 .constructor {
-  background-color: white;
+    background-color: white;
     color: #444;
     position: relative;
     max-width: 860px;
@@ -37,7 +37,7 @@ body {
 }
 
 .under-header{
-    background-color: #fff;
+  background-color: #fff;
     border-bottom: 1px solid;
     margin-bottom: 15px; 
 }
@@ -144,6 +144,7 @@ label.header-label.active {
     display: block;
     margin: auto;
     border: none;
+    transition-duration: 0.5s
 }
 .butt:hover{
     background: #03e9f4;
