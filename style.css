@@ -316,3 +316,20 @@ label.header-label.active {
       bottom: 100%;
     }
   }
+
+
+  .example{
+    height: 100px;
+    width: 100px;
+    background-color: #03e9f4;
+    position: absolute;
+    right: 900px;
+    border: 1px solid black;
+    animation: myAnimation 3s linear 0ms infinite alternate;
+   
+  }
+
+  @keyframes myAnimation {
+    from{margin-top: 100px;}
+    to{margin-bottom: 100px;}
+  }
