@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Git</title>
+</head>
+<body>
+    <header class="tm-header">
+        <label class = "header-label" for=""> <a href="CSS.html">CSS</a></label>
+        <label class = "header-label" for=""><a href="index.html">HTML</a></label>
+        <label class = "header-label" for=""> <a href="Javascript.html">JavaScript</a></label>
+        <label class = "header-label" for=""><a href="Algoritm.html">Алгоритмы</a></label>
+        <label class = "header-label" for="">Git</label>
+        <label class = "header-label" for=""><a href="Practic.HTML">Практика</a></label>
+    </header>
+    <main class="main_background">
+        <div class = "under-header">
+            </div>
+            <div class = "constructor">
+        <h1 > Введение в Git от Антона</h1>
+        <h2 > Начало работы</h2>
+        <p> В терминале внести <span class="color-font">git init</span> - установка репозитория</p>
+        <p> <span class="color-font">git config --local(global) user.name "Anton"</span> (определить свое имя)</p>
+        <p> <span class="color-font">git config --local user.email antonkox1999@gmail.com</span> (укощание имени)</p>
+        <p> <span class="color-font">git status</span> - узнать статус проекта</p>
+        <p> <span class="color-font">git add -A</span> - добавить все файлы в репозиторий</p>
+        <p> <span class="color-font">git commit -a -m"first commit"</span> - создание точки (после m комментаий)</p>
+        <p> <span class="color-font">git log</span> - история всех commit'ов</p>
+        <h2 >Как выложить Git в github</h2>
+        <p> <span class="color-font">git remote add origin https://github.com/antonkox1/My-ptoject.git</span> - связывает с github проект</p>
+        <p> <span class="color-font">git branch -M main</span> - Связывает с github проект</p>
+        <p> <span class="color-font">git push -u origin main</span> - Запушить в github c веткой</p>
+        <p> <span class="color-font">git push</span> - Теперь запушить в github</p>
+        <h2>Полезности</h2>
+        <p><span class="color-font">cd My-project</span>(путь к файлу) - войти в папку</p>
+        <p><span class="color-font">cd ..</span> - выйти из папки</p>
+        <p><span class="color-font">git pull</span> - загрузить проект с github</p>
+        <p><span class="color-font">git clone https://github.com/antonkox1/My-project.git</span> - Копирует проект</p>
+    </div>
+    </main>
+</body>
+</html>

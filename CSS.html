@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/Css-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/Css-16x16.png">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS</title>
+</head>
+<body>
+    <header class="tm-header">
+        <label class = "header-label" for="">CSS</label>
+        <label class = "header-label" for=""><a href="index.html">HTML</a></label>
+        <label class = "header-label" for=""> <a href="Javascript.html">JavaScript</a></label>
+        <label class = "header-label" for=""><a href="Algoritm.html">Алгоритмы</a></label>
+        <label class = "header-label" for=""><a href="Git-and-plagin.html">Git</a></label>
+        <label class = "header-label" for=""><a href="Practic.HTML">Практика</a></label>
+    </header>
+    <main class="main_background">
+        <div class = "under-header">
+            </div>
+            <div class = "constructor">
+        <h1 > Справочник CSS от Антона</h1>
+        <h2 > С чего начать?</h2>
+        <p> Обнуление стилей</p>
+        <p>*{<br> height: 100%;<br> padding: 0; <br> margin: 0; <br>border: 0;<br>}</p>
+        <p> Обращение к тегу по id (уникальный) с помощью # (применяется для логики, а не как свойство CSS) - #heading </p>
+        <h2 > Псевдоэлементы и псевдоклассы</h2>
+        <p>Псевдоклассы:</p>
+        <p class="low-margin">a:visited - изменение после перехода</p>
+        <p class="low-margin">a:hover - при наведении мыши</p>
+        <p class="low-margin">a:active - при клике мышью</p>
+        <p class="low-margin">a:focus - при нажатии Tab</p>
+        <p>Псевдоэлементы:</p>
+        <p class="low-margin">p::first-letter - изменение первой буквы</p>
+        <p class="low-margin">p::first-line - изменение первой строчки</p>
+        <p class="low-margin">p::selection - изменение выделяемого цвета</p> 
+        <p class="low-margin">h1::before{content: "Привет"} - добавляет текст сзади</p> 
+        <p class="low-margin">h1::after{content: "Пока"} - добавляет текст спереди</p> 
+        <p class="low-margin">.list(класс) li:ntn-clild(2) - изменяет определенное значение (можно использовать even и odd)</p> 
+        <h2>Блочная модель</h2>
+        <p>display:block - блочный элемент, занимет всю ширину страницы</p>
+        <p>display:inline - строчный элемент, занимет необходимоую ширину, нет отступов снизу и сверху</p>
+        <p>display:inline-block - блочно-строчный элемент, встраевается как блок, но занимает определенное место</p>
+        <p>box-sizing: border-box (ужимает блок до опреденной высоты и ширины)</p>
+        <h2>Позиционирование и размеры</h2>
+        <p>position:relative - перещается относительно блока в котором находится</p>
+        <p>position:absolute - позицианируется относительно блока</p>
+        <p>position:fixed - позицианируется относительно окна браузера</p>
+        <p>position:sticky - при скороле смешается по блоку</p>
+        <h2>Единицы, переполнение и уровни элементов</h2>
+        <p>2em - увеличение шрифта в раза относительно родителя</p>
+        <p>2rem - увеличение шрифта в раза относительно базового шрифта в теге html</p>
+        <p>width: 100vw - занять 100 процентов ширины</p>
+        <p>height: calc(90vw - 100px) - занять 90 процентов высоты минус 100 пиксейлей</p>
+        <p>z-index: 1 - позицианирование на странице, чем выше число, тем выше позиционирование</p>
+        <p>overflow: auto - устанавливает скрол, если он нужен</p>
+        <p>overflow: scroll - устанавливает скрол всегда</p>
+        <p>overflow: hidden - обрезает контент</p>
+        <h2>Границы и тени (Borders & Shadows)</h2>
+        <p style="border: red 5px solid;">border: red 5px solid  - Внутренние границы</p>
+        <p style="outline: blue 5px solid">outline: blue 5px solid; - Внешняя граница</p>
+        <p style="text-shadow: 1px 2px 5px orange">text-shadow: 1px 2px 5px orange; - первое значение смещение в право, второе смещение вних, третие размытие</p>
+        <p style="box-shadow: -3px -2px 11px green">box-shadow: -3px -2px 11px green; - К блоку</p>
+        <p style="box-shadow: -3px -2px 11px green, 1px 2px 5px orange, inset 1px 2px 5px black">box-shadow: -3px -2px 11px green, 1px 2px 5px orange, 1px 2px 5px black; - inset тень внутри, можно применять несколько теней</p>
+        <h2>Трансформации (Transform)</h2>
+        <p style="transform: rotate(360deg);">transform: rotate(180deg) - переворот на 180 градусов</p>
+        <p style="transform: scale(0.8);">transform: scale(1.2) - увеличивает на 1.2 (если написать 0.8 то уменьшится)</p>
+        <p>transform: scaleX(1.2) - увеличивает по оси X на 1.2</p>
+        <p>transform: scaleY(1.2) - увеличивает по оси Y на 1.2</p>
+        <p style="transform: translate(50%, 50%);">transform: translate(50%, 50%) - смещение по горизонтали и вертикали соответственно</p>
+        <p>transform: skew(21deg,21deg) - наклоны по горизонтали и вертикали соответственно</p>
+        <p>transform: skew(21deg,21deg) rotate(180deg) scaleY(1.2)- Множественное преобразование</p>
+        <p>transform-origin: 0 0; (top) - изменение точки опоры </p>
+        <h2>Background</h2>
+        <p>background-size: 100% 100% - размер фона</p>
+        <p>background-image: url(); - добавляет изображение</p>
+        <p>background-repeat: no-repeat - не повторяет изображение</p>
+        <p>background-position: 50% 50% - позицианирование фона(сейчас по центру)</p>
+        <p>background-attachment: fixed - фиксирует объект</p>
+        <p>background: linear-gradient (90deg, black 10%, white 50%, blue 80%) - добавляет градиет в 90 градусов</p>
+        <p>background: radial-gradient (90deg, black 10%, white 50%, blue 80%) - добавляет градиет в по кругу</p>
+        <h2>Фильтры</h2>
+        <p>filter:blur(2px) - Размытие</p>
+        <p>filter:drop-shadow (5px 6px 4px rgb (0,0,0, 0.5)) - создает тень (также и для псевдоэлементов)</p>
+        <p>filter:grayscale(100%) - задает черно-белым</p>
+        <p>filter:brighness(150%) - задает яркость</p>
+        <p>filter: opacity(50%) - задает прозрачность</p>
+        <h2>Плавные переходы</h2>
+        <p>transition-duration: 0.5s, 2s(500ms) - время анимации, можно задавать для нескольких анимаций</p>
+        <p>transition-property: background-color, transform (all) - к каким свойствам применить анимацию</p>
+        <p>transition-delay: 0, 500ms - время задержки анимации</p>
+        <p>transition-timing-function: linear - время задержки анимации</p>
+        <p>transition: all 1s ease .5s; - краткая запись</p>
+        <h2>Анимации</h2>
+        <div class = "example"></div>
+        <p>animation-name: myAnimation - вызвать анимацию</p>
+        <p>animation-iteration-count: infinite(3) - задает количество анимаций</p>
+        <p>animation: name duration timing-function delay iteration-count direction fill-mode; - краткая запись</p>
+        <p>animation-play-state: paused(running) - останавливает или возобновляет анимацию</p>
+        <p>animation-fill-mode: forwards; - оставляет анимацию без возврата</p>
+        <p>animation-direction: alternate; - Анимация проигрывается наоборот, с последнего положения до первого и потом снова сбрасывается в конечное положение и снова проигрывается.</p>
+        <p>@keyframe myAnimation {<br> from {background-color:blue}<br>50% {background-color:yellow}<br>to {background-color:black}<br>}</p>
+        <h2>Медиазапросы</h2>
+        <p></p>
+        <h2>CSS Flexbox</h2>
+        <p>justify-content: space-between - выравнивание по ширине с отступами</p>
+        <p>justify-content: space-around - выравнивание по ширине с отступами и по краям</p>
+        <p>justify-content: space-evenly - выравнивание без доп. отступов</p>
+        <p>flex-direction: column - изменяет ось на вертикальную</p>
+        <p>flex-wrap: wrap; - разрешает отступ, если контент не влезает</p>
+        <p>flex-grow: 1; - пропорция расспределения пространства</p> 
+        <p>flex-shrink: 2 - устпупить пикселей при уменьшении</p>
+        <p>flex: 1 0 300px;(grow, shrink, basis) - объединенная запись </p>
+        <p>justify-content: centre; - выравнивает по основной Оси</p>
+        <p>align-items: center; - выравнивает по поперечной Оси</p>
+        <h2>Полезности</h2>
+        <p>visibility: hidden;  - Скрыть текст (оставляет отступы)</p>
+        <p>column-count: 3 - разделяет текст на 3 колонки</p> 
+        <p>column-rule: 1px solid black - добавляет линию разделения колонок</p> 
+        <h2>CSS grid</h2>
+        <p>grid-template-colums: 100px 1fr 200px; - Разбитие по колонкам (fr - все ширина)</p>
+        <p>grid-template-rows: 100px 1fr 200px; - Разбитие по строкам </p>
+        <p>grid-colums: 1/2;  - между каких колонок будет применнено свойство</p>
+        <p>grid-row: 3/4;  - между каких строк будет применнено свойство</p>
+        <p>grid-area: 1/3/4/4;  - комбинация двух свойств начало с colums затем row</p>
+        <p>grid-gap: 10px; - отступ между элементами</p>
+    </div>
+    </main>
+</body>
+</html>

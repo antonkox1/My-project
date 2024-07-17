@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/HTML-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/HTML-16x16.png">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML</title>
+</head>
+<body>
+    <header class="tm-header">
+    <label class = "header-label" for=""> <a href="CSS.html">CSS</a></label>
+    <label class = "header-label" for="">HTML</label>
+    <label class = "header-label" for=""> <a href="Javascript.html">JavaScript</a></label>
+    <label class = "header-label" for=""><a href="Algoritm.html">Алгоритмы</a></label>
+    <label class = "header-label" for=""><a href="Git-and-plagin.html">Git</a></label>
+    <label class = "header-label" for=""><a href="Practic.HTML">Практика</a></label>
+    </header>
+
+    <main class="main_background">
+        <div class = "under-header">
+            </div>
+            <div class = "constructor">
+        <h1 > Справочник HTML от Антона</h1>
+        <h2 >Основные теги</h2>
+        <p class = "long_text">HTML (HyperText Markup Language) — язык для разметки гипертекста, он является набором правил, по которым браузер отличает заголовки от списков, таблицы от картинок и так далее. HTML появился в 1993 году и был призван стандартизировать правила для вывода текста внутри веб-страниц.</p>
+        <p>Тег &lt;p&gt является параграфом и добавляет отступы снизу и сверху</p>
+        <p>Тег &lt;script src="Путь к файлу(js/script.js)"&gt  подключается в конце перед закрывающим тегом /body</p>
+        <h2>Теги для запонения формы</h2>
+        <h3>Тег form</h3>
+         <!-- Тег form -->
+        <p class="code">&lt;form action="#" method="get"&gt</p>
+        <p >Атрибуты тега form:</p>
+        <p class="low-margin">action - задает url-адрес отправки формы</p>
+        <p class="low-margin">method - задает метод отправки данных</p>
+        <p>action - абсолютный url и относительный (http://site.com и на сервер)</p>
+        <p class="low-margin">methot="get" - посылает данные в строку запроса (стоит по умолчанию)</p>
+        <p class="low-margin">methot="post" - связь с сервером</p>
+            <form action="#" method="get">   <!-- # заглушка -->
+            <!-- Тег input -->
+            <h3>Тег input</h3>
+            <p class = "code">&lt;input type="text" placeholder="Напиши что-нибудь" name="", value=""&gt</p>
+            <p >Атрибуты тега input:</p>
+            <p class="low-margin">type - задает тип поля</p>
+            <p class="low-margin">name - задает имя поля (должно быть уникальное, кроме radio)</p>
+            <p><input type="text" placeholder="Напиши что-нибудь" name="" value="" id=""> </p><!-- placeholder добавляет надпись -->
+            <!-- checked отмечает одно из значений -->
+            <p>Тип radio:</p>
+            <p><input checked type="radio" name="code", value="Yes"> Кодить</p> 
+            <p><input type="radio" name="code", value="No"> Не кодить</p>
+             <!-- checkbox отмечает несколько значений -->   
+            <p>Тип checkbox:</p>
+            <p><input type="checkbox" name="skills" value="da"> Html</p>
+            <p><input type="checkbox" name="skills1" value="da"> CSS</p>
+            <p><input type="checkbox" name="skills2" value="da"> JavaScripts</p>
+            <p><input type="checkbox" name="skills3" value="da"> React</p>
+             <!-- file для добавления файла -->   
+            <p>Тип file:</p>
+            <p><input type="file" name="photo"> </p>
+             <!-- textarea для заполнения -->   
+            <p>Тег &lt;textarea name=""&gt, для ввода большого текста</p>
+            <textarea name=""></textarea> 
+             <div>
+                 <select name="color" id="">
+                 <option value="red">Красный</option>
+                 <option value="blue">Синий</option>
+                 <option value="yellow">Желтый</option>
+                 </select>
+             </div>
+              <!-- Тег label -->
+             <h3>Тег label</h3>
+             <label for="user-id">Нажми</label>
+             <input hidden="true" type="radio" name = "list" id="user-id" autocomplete="off">
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
